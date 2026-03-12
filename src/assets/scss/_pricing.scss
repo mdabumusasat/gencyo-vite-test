@@ -1,0 +1,201 @@
+.pricing-block {
+    margin-top: 45px;
+    transition: all .4s ease-in-out;
+    
+     @include media-breakpoint-down (lg){
+        margin-top: 30px;
+    }
+
+    .inner-box {
+        background-color: var(--theme-color-black);
+        border: 1px solid rgba(255, 255, 255, 0.13);
+        padding: 10px;
+        border-radius: 40px;
+        padding-bottom: 50px;
+
+        @include media-breakpoint-down (xl){
+            font-size: 14px;
+            padding-bottom: 30px;
+        }
+
+        .pricing-header {
+            background-color: var(--theme-color3);
+            padding: 40px;
+            border-radius: 30px;
+            position: relative;
+            padding-top: 35px;
+            padding-bottom: 30px;
+
+            @include media-breakpoint-down (xxl){
+                padding: 28px;
+            }
+
+            .pricing-flower {
+                position: absolute;
+                top: 40px;
+                right: 40px;
+            }
+
+            .sub-title {
+                font-size: 18px;
+                font-weight: 400;
+                color: var(--theme-color1);
+                display: inline-block;
+                margin-bottom: 20px;
+
+                 @include media-breakpoint-down (xl){
+                   font-size: 16px;
+                }
+            }
+
+            .price {
+                font-weight: 400;
+                font-size: 65px;
+                color: #fff;
+                line-height: 1;
+
+                 @include media-breakpoint-down (xl){
+                   font-size: 50px;
+                }
+
+                sup {
+                    top: 0;
+                    color: var(--theme-color1);
+                    font-size: 24px;
+                    font-weight: 400;
+                    // margin-right: 10px;
+                }
+
+                sub {
+                    font-size: 18px;
+                    font-weight: 400;
+                    color: #fff;
+                    bottom: 0;
+                    // right: 15px;
+
+                     @include media-breakpoint-down (xl){
+                    font-size: 16px;
+                    }
+                }
+            }
+        }
+
+        .pricing-list {
+            padding: 50px 40px;
+
+             @include media-breakpoint-down (xxl){
+                padding: 30px 28px;
+            }
+
+            li {
+                font-size: 16px;
+                font-weight: 400;
+                display: flex;
+                align-items: center;
+                gap: 15px;
+                color: #fff;
+
+                @include media-breakpoint-down (xxl){
+                   font-size: 15px;
+                }
+
+                 @include media-breakpoint-down (xl){
+                   font-size: 14px;
+                }
+
+                &:not(:last-child){
+                    margin-bottom: 7px;
+
+                    @include media-breakpoint-down (xl){
+                        margin-bottom: 10px;
+                    }
+                }
+            }
+        }
+
+        .pricing-button {
+            padding: 0 40px;
+
+            @include media-breakpoint-down (xxl){
+                padding: 0 28px;
+            }
+        }
+
+        .pricing-btn {
+            display: inline-block;
+            font-size: 16px;
+            font-weight: 500;
+            background-color: var(--theme-color2);
+            width: 100%;
+            text-align: center;
+            color: #fff;
+            border-radius: 40px;
+            height: 56px;
+            line-height: 56px;
+        }
+
+        &:hover {
+            .pricing-btn {
+                background-color: var(--theme-color1);
+            }
+
+            .pricing-flower{
+                animation: spin 15s linear infinite;
+            }
+        }
+    }
+
+    &.style-2 {
+        position: relative;
+        z-index: 9;
+
+        @include media-breakpoint-down (md){
+            margin-top: 80px;
+        }
+       
+
+        &::before {
+            background-color: var(--theme-color1);
+            border-radius: 40px 40px 0 0;
+            content: "";
+            height: 110px;
+            left: 0;
+            position: absolute;
+            right: 0;
+            top: -50px;
+            width: 100%;
+            z-index: -1;
+        }
+
+        .recommend {
+            font-size: 20px;
+            font-weight: 500;
+            color: #fff;
+            text-align: center;
+            left: 0;
+            position: absolute;
+            right: 0;
+            top: -43px;
+            width: 100%;
+            z-index: -1;
+        }
+    }
+
+    &:hover {
+         transform: translateY(-10px);
+    }
+}
+
+.pricing-section-2 {
+    .sec-title {
+        margin-bottom: 60px;
+
+        @include media-breakpoint-down (md){
+            margin-bottom: 30px;
+        }
+
+         @include media-breakpoint-down (xxs){
+            margin-bottom: 15px;
+        }
+    }
+}

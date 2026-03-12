@@ -1,0 +1,426 @@
+.contact-section {
+    border-radius: 40px;
+    margin: 0 60px;
+    position: relative;
+    z-index: 9;
+    background-color: var(--theme-color2);
+    border: 1px solid rgba(255, 255, 255, 0.13);
+
+    .vec-shape {
+        position: absolute;
+        bottom: 0;
+        right: -3%;
+
+        @include media-breakpoint-down (xxl){
+            display: none !important;
+        }
+    }
+
+    .contact-image {
+        position: absolute;
+        bottom: 0;
+        top: 0;
+        left: 0;
+        width: 50%;
+        border-radius: 30px;
+        overflow: hidden;
+        z-index: -1;
+
+        @include media-breakpoint-down (lg){
+            display: none;
+        }
+
+        &::before {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            width: 100%;
+            height: 100%;
+            content: "";
+            background: linear-gradient(360deg, #000000 -2.38%, rgba(0, 0, 0, 0.54) 100%);
+            border-radius: 30px;
+            z-index: 1;
+        }
+
+        img {
+            width: 100%;
+            height: 100%;
+             border-radius: 30px;
+             object-fit: cover;
+        }
+    }
+
+    @include media-breakpoint-down (xxxl){
+        margin: 0 35px;
+    }
+
+    @include media-breakpoint-down (xxl){
+        margin: 0 28px;
+    }
+
+     @include media-breakpoint-down (xl){
+        margin: 0 20px;
+    }
+
+    @include media-breakpoint-down (md){
+        padding-left: 20px !important;
+        padding-right: 20px !important;
+    }
+
+     @include media-breakpoint-down (xxs){
+        margin: 0 16px;
+        padding-left: 20px !important;
+        padding-right: 20px !important;
+    }
+}
+
+.contact-content-1 {
+   
+
+    .contact-text {
+        max-width: 536px;
+        margin-top: 20px;
+    }
+
+    .contact-list-items {
+        display: flex;
+        align-items: center;
+        gap: 40px;
+        margin-top: 110px;
+
+        @include media-breakpoint-down (xl){
+            gap: 20px;
+        }
+
+        @include media-breakpoint-down (lg){
+            gap: 60px;
+            margin-top: 30px;
+        }
+
+        @include media-breakpoint-down (md){
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        .contact-list {
+            .title {
+                font-size: 20px;
+                color: #fff;
+                margin-bottom: 12px;
+            }
+
+            .contact-icon {
+                display: flex;
+                align-items: center;
+                gap: 18px;
+
+                 p {
+                    color: #fff;
+                    font-size: 16px;
+                    font-weight: 400;
+                    max-width: 172px;
+                    line-height: 1.6;
+
+                    a {
+                        color: #fff;
+                    }
+                }
+            }
+        }
+
+        .line {
+            width: 1px;
+            height: 75px;
+            background-color: var(--theme-color1);
+
+            @include media-breakpoint-down (xl){
+                display: none;
+            }
+        }
+    }
+}
+
+.contact-form-style-1 {
+    margin-left: 70px;
+    position: relative;
+    z-index: 9;
+
+    @include media-breakpoint-down (xl){
+        margin-left: 0;
+    }
+
+    .line-shape {
+        position: absolute;
+        bottom: -15%;
+        right: 0;
+        z-index: -1;
+    }
+
+
+    .contact-form-box {
+        max-width: 648px;
+
+        @include media-breakpoint-down (xl){
+            margin-left: 40px;
+        }
+
+        @include media-breakpoint-down (lg){
+            margin-left: 0;
+            margin-top: 50px;
+            max-width: initial;
+        }
+
+       
+
+        .form-clt {
+            input,textarea {
+                border-bottom: 1px solid rgba(255, 255, 255, 0.14);
+                padding-bottom: 27px;
+                color: #fff;
+                outline: none;
+                background: transparent;
+                width: 100%;
+                font-size: 16px;
+                font-weight: 400;
+
+                &::placeholder {
+                    color: #fff;
+                }
+            }
+
+            textarea {
+                padding-bottom: 100px;
+            }
+        }
+
+        .contact-button {
+            margin-top: 6px;
+        }
+    }
+}
+
+
+.contact-inner-3 {
+    background-color: var(--theme-color2);
+    border-radius: 40px;
+    margin: 0 60px;
+    position: relative;
+    z-index: 9;
+
+    .contact-vec {
+        position: absolute;
+        top: -80px;
+        left: 0;
+    }
+
+    @include media-breakpoint-down (xxxl){
+        margin: 0 35px;
+    }
+
+    @include media-breakpoint-down (xxl){
+        margin: 0 28px;
+    }
+
+    @include media-breakpoint-down (xl){
+        margin: 0 20px;
+    }
+
+    @include media-breakpoint-down (xxs){
+        margin: 0 16px;
+    }
+
+    .sec-title {
+        .text {
+            color: var(--text-color);
+            margin-top: 20px;
+            max-width: 490px;
+        }
+    }
+}
+
+  .contact-wrapper{
+    display: flex;
+    margin-top: 72px;
+   
+    @include media-breakpoint-down(xl){
+      margin-top: 40px;
+      flex-wrap: wrap;
+    }
+  }
+
+.contact-widget{
+    border: 1px dashed rgba(var(--theme-color-white-rgb), 0.1);
+    border-radius: 10px;
+    display: inline-block;
+    height: 274px;
+    padding-left: 30px;
+    padding-right: 30px;
+    position: relative;
+    width: 312px;
+    @media (max-width: 1299.98px){
+      height: auto;
+      padding: 30px 15px;
+      width: auto;
+    }
+    @include media-breakpoint-down(xl){
+      margin-bottom: 30px;
+    }
+    @include media-breakpoint-down(sm){
+      height: auto;
+      padding: 20px 15px;
+      width: auto;
+    }
+}
+
+.contact-badge{
+    background-color: var(--theme-color1);
+    border-radius: 20px;
+    margin-bottom: 27px;
+    max-width: 285px;
+    margin-top: -40px;
+    padding: 35px 40px 30px;
+    position: relative;
+    @include media-breakpoint-down(sm){
+        margin-top: 0;
+        max-width: none;
+        padding: 30px;
+    }
+    .conpany-logo{
+        margin-bottom: 20px;
+    }
+    .title{
+        color: #fff;
+        margin-bottom: 0;
+        font-weight: 500;
+
+    }
+}
+.contact-social{
+    .title{
+        color: #fff;
+        font-weight: 500;
+    }
+}
+.social-icons{
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0;
+    margin-top: 10px;
+
+    a{
+        background-color: rgba(var(--theme-color-white-rgb), .1);
+        border-radius: 50%;
+        color: #fff;
+        display: inline-block;
+        font-size: 13px;
+        height: 40px;
+        line-height: 40px;
+        text-align: center;
+        width: 40px;
+        @include transition(all 300ms ease);
+        &:hover{
+        background-color: var(--theme-color1);
+        }
+    }
+}
+.contact-info{
+    margin-left: 30px;
+    position: relative;
+    @media (max-width: 1299.98px){
+        margin-left: 20px;
+    }
+    @include media-breakpoint-only(lg){
+        margin-left: 0px;
+    }
+    @include media-breakpoint-down(md){
+        margin-left: 0;
+        margin-top: 30px;
+    }
+    .info-list{
+        &:not(:last-child){
+            margin-bottom: 33px;
+           
+            @include media-breakpoint-down (xl){
+                 margin-bottom: 20px;
+            }
+        }
+    }
+    .subtitle{
+        color: rgba(255, 255, 255, 0.6);
+        font-weight: 400;
+        letter-spacing: -0.02em;
+    }
+    .title{
+        color: #FFFFFF;
+        font-weight: 400;
+        letter-spacing: -0.02em;
+    }
+}
+
+.contact-form3 {
+  position: relative;
+
+  @include media-breakpoint-down (md){
+    margin-top: 30px;
+  }
+
+  .color3 {
+    color: var(--theme-color1);
+  }
+  .form-group {
+    position: relative;
+    margin-bottom: 20px;
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+  label{
+    color: #fff;
+    margin-bottom: 15px;
+    font-weight: 400;
+  }
+  .select2-container--default .select2-selection--single,
+  input:not([type="submit"]),
+  textarea,
+  select {
+    background-color: rgba(var(--theme-color-white-rgb), 0.1);
+    border: 1px solid transparent;
+    border-radius: 10px;
+    color: rgba(255, 255, 255, 0.2);
+    display: block;
+    font-size: 16px;
+    font-weight: 400;
+    height: 60px;
+    line-height: 18px;
+    margin-bottom: 0;
+    padding: 23px 20px;
+    position: relative;
+    width: 100%;
+    @include transition(all 300ms ease);
+  }
+  ::-webkit-input-placeholder {
+    color: rgba(255, 255, 255, 0.2);
+  }
+  input:focus,
+  select:focus,
+  textarea:focus {
+    border-color: var(--theme-color1);
+  }
+  textarea {
+    height: 225px;
+    resize: none;
+  }
+}
+
+.contact-section-3 {
+    position: relative;
+
+    .contact-light {
+        position: absolute;
+        bottom: -38%;
+        right: 0;
+    }
+}

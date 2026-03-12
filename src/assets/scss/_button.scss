@@ -1,0 +1,105 @@
+.btn-style-one {
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  background-color: var(--theme-color1);
+  border-radius: 50px;
+  color: var(--theme-color1-text-color);
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  overflow: hidden;
+  padding: 14.5px 60px 14.5px 30px;
+  position: relative;
+  text-transform: capitalize;
+  -webkit-transition: all 400ms ease;
+  transition: all 400ms ease;
+  z-index: 0;
+
+  &:hover {
+  
+    .btn-arrow-left {
+      scale: 1;
+    }
+    .btn-arrow-right {
+     scale: 0;
+    }
+    .btn-title {
+      -webkit-transform: translateX(30px);
+          transform: translateX(30px);
+    }
+  }
+
+
+  .btn-arrow-right {
+    -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+    background: var(--theme-color-white);
+    border-radius: 50%;
+    color: var(--theme-color2);
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    font-size: 15px;
+    height: 40px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    left: auto;
+    line-height: 1;
+    position: absolute;
+    right: 10px;
+    width: 40px;
+    -webkit-transition: all 400ms ease;
+    transition: all 400ms ease;
+
+    i {
+      rotate: -30deg;
+    }
+  
+  }
+
+  .btn-arrow-left {
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+    align-items: center;
+  background: var(--theme-color-white);
+  border-radius: 50%;
+  color: var(--theme-color2);
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  font-size: 15px;
+  height: 40px;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  line-height: 1;
+  left: 10px;
+  position: absolute;
+  right: auto;
+  scale: 0;
+  width: 40px;
+  -webkit-transition: all 400ms ease;
+  transition: all 400ms ease;
+  }
+  .btn-title{
+  
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    border-radius: 100px;
+    font-weight: 500;
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    gap: 10px;
+    text-transform: capitalize;
+    -webkit-transition: all 400ms ease;
+    transition: all 400ms ease;
+    font-size: 16px;
+    color: var(--theme-color-white);
+    
+  }
+}
